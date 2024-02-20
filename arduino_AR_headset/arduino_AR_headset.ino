@@ -128,7 +128,7 @@ void loop()
   // Set declination angle on your location and fix heading
   // You can find your declination on: http://magnetic-declination.com/
   // (+) Positive or (-) for negative
-  // For Bytom / Poland declination angle is 4'26E (positive)
+  // For St Cloud / Waite Park Angle declination angle is 4'26E (positive)
   // Formula: (deg + (min / 60.0)) / (180 / M_PI);
   float declinationAngle = (0 + (38.0 / 60.0)) / (180 / PI);
   heading += declinationAngle;
@@ -192,42 +192,43 @@ void loop()
   // Get the z distance
   float distanceX = distanceXY * cos(theta * PI / 180);
 
-  
+  // Send distance X with payload "X" as marker  
   Serial.print(distanceX);
   Serial.println("X");
   
   delay(50);
-  
+
+  // Send distance Y with payload "Y" as marker
   Serial.print(distanceY);
   Serial.println("Y");
   
   delay(50);
-  
+
+  // Send distance Z with payload "Z" as marker 
   Serial.print(distanceZ);
   Serial.println("Z");
   
   delay(50);
-  
 }
 
-
+// Function to display information via the GPS 
 void displayInfo()
 {
   if (gps.location.isValid())
   {
-    //Display latitude
+    // Send latitude with payload "LA" as marker
     Serial.print(gps.location.lat(), 6);
     Serial.println("LA");
     
     delay(50);
-
-    //Display longitude 
+    
+    // Send longitude with payload "LO" as marker
     Serial.print(gps.location.lng(), 6);
     Serial.println("LO");
     
     delay(50);
 
-    //Display altitude 
+    // Send altitude with payload "AL" as marker
     Serial.print(gps.altitude.meters());
     Serial.println("AL");
     
