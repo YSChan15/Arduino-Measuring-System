@@ -14,17 +14,16 @@
 > This project is sponsored by a grant from the Emerson cooperation. 
 
 
+> Authors:
+> - Brycen Hillukka (Spring 2023)
+> - Yu Sheng Chan   (Spring 2023)
+>
 > Reads the measured distance from the SF11/C LiDAR sensor using an 
 > Arduino Nano using the I2C protocol. Connect the SCL connection from 
 > the SF11/C to pin A5 on the Arduino, and the SDA connection to pin A4.
 > 
 > The code for reading from the SF11/C and storing the value on the Arduino
 > were given in the datasheet for the LiDAR sensor. Refer to Github Datasheet section (SF11 datasheet)
->
-> Modifications were made by:
-> - Brycen Hillukka (Spring 2023)
-> - Yu Sheng Chan   (Spring 2023)
->
 >
 > Further modifications were made by:
 > - Yu Sheng Chan   (Fall 2023)
