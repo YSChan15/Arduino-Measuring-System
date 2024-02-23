@@ -1,5 +1,49 @@
 # Arduino Nano code 
 
+## Introduction 
+* This project is part of the senior design of the following title:
+
+**Facial Recognition and Detection using Augmented Reality Headset with Cloud Server and SmartMesh IP Network**
+
+* Advisor: Dr Zheng 
+
+* Commitee: Dr Hossain, Dr Cavalcanti
+  
+* Group members: Yu Sheng Chan, Brycen Hillukka, Hayden Scott, Brandon Wieberdink 
+
+> This project is sponsored by a grant from the Emerson cooperation. 
+
+
+> Reads the measured distance from the SF11/C LiDAR sensor using an 
+> Arduino Nano using the I2C protocol. Connect the SCL connection from 
+> the SF11/C to pin A5 on the Arduino, and the SDA connection to pin A4.
+> 
+> The code for reading from the SF11/C and storing the value on the Arduino
+> were given in the datasheet for the LiDAR sensor. Refer to Github Datasheet section (SF11 datasheet)
+>
+> Modifications were made by:
+> - Brycen Hillukka (Spring 2023)
+> - Yu Sheng Chan   (Spring 2023)
+>
+>
+> Further modifications were made by:
+> - Yu Sheng Chan   (Fall 2023)
+> 
+>  New addition: GPS and Electronic Compass module 
+> 
+>  Reads the GPS location and Electronic Compass moudle reading to determine the coordinates of a measured point 
+>  Math is done on the AR Headset / UWP side instead of Arduino for quicker transfer rate 
+> 
+>  The Electronic Compass module can be changed to either QMC or HMC chip. 
+>  Please follow the datasheet for specific pinout / voltage requirements of the chip. 
+>  If neither chip is used, please use your own library. 
+>  Refer to README.MD files attached 
+> 
+>  Use a high gain antenna if GPS disconnects frequently or could not connect during outdoor use. 
+>  Please note that the GPS is intended for outdoor use. It is expected to have no signal indoors. 
+>  Please refer to the specifications of the datasheet of GPS for antenna compatibality. 
+> 
+
 ## Before you start 
 
 ### Program / hardware needed 
@@ -74,6 +118,8 @@
 
 ## Purchase link 
 Purchase link can be found below if replacement part is needed. 
+
+**Please note that I am not affiliated with any of the listed product, and the link is provided solely for your convenience.**
 
 [**GPS SENSOR**](https://www.amazon.com/Navigation-Satellite-Compatible-Microcontroller-Geekstory/dp/B07PRGBLX7?th=1)
 
