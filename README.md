@@ -67,7 +67,7 @@
 #### Library of MPU6050_light
 * To include the libraries, go to Sketch -> Include Library -> Manage Library
 
-* Search for MPU6050_light by rfetick and click install
+* Search for [MPU6050_light](https://github.com/rfetick/MPU6050_light) by rfetick and click install
 
 * Use #include <MPU6050_light.h> as your header file
 
@@ -75,7 +75,7 @@
 #### Library of GT-U7 GPS module
 * To include the libraries, go to Sketch -> Include Library -> Manage Library
 
-* Search for TinyGPSPlus by Mikah Hart and click install
+* Search for [TinyGPSPlus](https://github.com/mikalhart/TinyGPSPlus) by Mikah Hart and click install
 
 * Use #include <TinyGPS++.h> as your header file
 
